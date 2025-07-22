@@ -1,0 +1,17 @@
+accelerate>=0.22.0
+diffusers==0.30.3
+matplotlib
+scipy
+torch==2.4.1
+torchvision==0.19.1
+transformers>=4.32.1
+omegaconf
+pandas
+tabulate
+torchmetrics
+h5py
+opencv-python
+tensorboard
+wandb
+scikit-learn
+xformers==0.0.28
