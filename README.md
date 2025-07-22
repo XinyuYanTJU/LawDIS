@@ -29,8 +29,8 @@ This repo contains the source code and prediction results of our paper [_LawDIS:
 - **Superior performance.** Extensive evaluations on the DIS5K benchmark demonstrate that LawDIS consistently outperforms 11 state-of-the-art methods. Compared to the second-best model MVANet, LawDIS achieves a 3.6% $F_\beta^\omega$ improvement using LS alone, and a 4.6% gain when combining both LS and WR on DIS-TE.
 
 ## 📢 2. News
-- **2025.06** 🎉 Our paper has been accepted by **ICCV 2025**!  
 - **2025.07** 💻 We have open-sourced the **core code** of LawDIS!
+- **2025.06** 🎉 Our paper has been accepted by **ICCV 2025**!  
 
 > This project is still a work in progress, and we invite all to contribute to making it more accessible and useful. If you have any questions about our paper, feel free to contact me via e-mail (xinyuyan@tju.edu.cn). If you are using our code for your research, please cite this paper ([BibTeX](#4-citation)).
 
