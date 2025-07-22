@@ -74,64 +74,19 @@ pip install -r requirements.txt
 
 This project uses a custom VAE class `AutoencoderKlLawDIS` that needs to be manually added into the `diffusers` library.
 
-##### (1) Locate `diffusers` in your environment
-
-Check the installed location:
-
 ```bash
-pip show diffusers
+bash /install_lawdis_diffusers.sh
 ```
 
-##### (2) Create a symbolic link to `diffusers` in your repo root
+### 4.3. Dataset Preparation
 
-Replace `/path/to/your/venv` with the actual path from the previous step:
+Download the **DIS5K dataset** from this [Google Drive link](https://drive.google.com/file/d/1O1eIuXX1hlGsV7qx4eSkjH231q7G1by1/view?usp=sharing) or [Baidu Pan link](https://pan.baidu.com/s/1y6CQJYledfYyEO0C_Gejpw?pwd=rtgw) with the fetch code: `rtgw`.
+Unzip the dataset and place the unzipped dataset folder (e.g., `DIS5K`) inside the root of the `LawDIS` repository.
 
-```bash
-ln -s /path/to/your/venv/lib/python3.x/site-packages/diffusers ./diffusers
-```
-
-##### (3) Copy custom VAE implementation
-
-Copy the custom model files:
-
-```bash
-cp lawdis_diffusers/* diffusers/models/autoencoders/
-```
-
-##### (4) Register `AutoencoderKlLawDIS` in the `diffusers` package
-
-Modify the following files in the `diffusers` package to include the new model:
-
-- `diffusers/models/autoencoders/__init__.py`  
-  Add at line **9**:
-  ```python
-  from .autoencoder_kl_lawdis import AutoencoderKlLawDIS
-  ```
-
-- `diffusers/models/__init__.py`  
-  Add at line **31**:
-  ```python
-  _import_structure["autoencoders.autoencoder_kl_lawdis"] = ["AutoencoderKlLawDIS"] 
-  ```  
-  And at line **82**:
-  ```python
-  AutoencoderKlLawDIS,
-  ```
-
-- `diffusers/__init__.py`  
-  Add at line **82**:
-  ```python
-  "AutoencoderKlLawDIS",
-  ```
-  
-  And at line **546**:
-  ```python
-  AutoencoderKlLawDIS,
-  ```
-### 4.3. Inference
+### 4.4. Inference
 #### ✅ Step 1. Download the Checkpoints
 
-Download the pre-trained [checkpoints](https://pan.baidu.com/s/1DGqK_Nl3ccv_pi4mIOMndw) (access code: `2025`) from Baidu Netdisk.  
+Download the pre-trained checkpoints from this [Google Drive link](https://drive.google.com/drive/folders/1RDBTj5-Z9Ek9wqnYoQHkFz4_zCFwiKK_?usp=drive_link) or [Baidu Pan link](https://pan.baidu.com/s/1DGqK_Nl3ccv_pi4mIOMndw) with the fetch code: `2025`.
 Place the checkpoint files under:
 
 ```bash
@@ -192,7 +147,7 @@ bash run_infer_micro_single.sh
 ```
 ## 🏋️ 5. Results
 
-The [predicted segmentation maps](https://pan.baidu.com/s/1em-6dEh2Qr2si17zi-CCxg) (access code: `lawd`) of both **Macro** and **Micro** modes can be downloaded from Baidu Netdisk.
+The predicted segmentation maps of both **Macro** and **Micro** modes can be downloaded from this [Google Drive link](https://drive.google.com/drive/folders/16WlZEq4NQso3gP3AdYcbdNf9Q0_KjZHN?usp=sharing) or [Baidu Pan link](https://pan.baidu.com/s/1em-6dEh2Qr2si17zi-CCxg) with the fetch code: `lawd`.
 
 <p align="center">
     <img src="imgs/4.png"/> <br />
