@@ -65,7 +65,7 @@ cd LawDIS
 ### 4.2. Dependencies
 #### ✅ Step 1. Install the dependencies:
 ```bash
-conda create -n=lawdis python=3.8
+conda create -n lawdis python=3.8
 conda activate lawdis
 pip install -r requirements.txt
 ```
