@@ -14,7 +14,7 @@ This repo contains the source code and prediction results of our paper [_LawDIS:
 ## 🚀 1. Features
 
 <p align="center">
-    <img src="imgs/1.png" width="450"/> <br />
+    <img src="assets/1.png" width="450"/> <br />
     <em> 
     Fig. 1: Illustration of the proposed macro and micro controls for DIS. The macro mode enables users to segment objects with customised language prompts, while micro mode supports post-refinement on user-defined windows at any scale. After refinement, our results become more precise, whereas the runner-up model, MVANet, lacks adaptability to the cropped local patches, resulting to inferior predictions.
     </em>
@@ -38,13 +38,13 @@ This repo contains the source code and prediction results of our paper [_LawDIS:
 <table align="center">
   <tr>
     <td align="center" valign="top" >
-      <img src="imgs/2.jpg" height="450px"/><br/>
+      <img src="assets/2.jpg" height="450px"/><br/>
       <div style="height: 50px;">
         <sub><em>Fig. 2: An overview of the U-Net training protocol in LawDIS.</em></sub>
       </div>
     </td>
     <td align="center" valign="top" >
-      <img src="imgs/3.png" height="450px"/><br/>
+      <img src="assets/3.png" height="450px"/><br/>
       <div style="height: 50px;">
         <sub><em>Fig. 3: Overview of the inference protocol, which consists of two steps.</em></sub>
       </div>
@@ -150,14 +150,14 @@ bash run_infer_micro_single.sh
 The predicted segmentation maps of both **Macro** and **Micro** modes can be downloaded from this [Google Drive link](https://drive.google.com/drive/folders/16WlZEq4NQso3gP3AdYcbdNf9Q0_KjZHN?usp=sharing) or [Baidu Pan link](https://pan.baidu.com/s/1em-6dEh2Qr2si17zi-CCxg) with the fetch code: `lawd`.
 
 <p align="center">
-    <img src="imgs/4.png"/> <br />
+    <img src="assets/4.png"/> <br />
     <em> 
     Fig. 4: Quantitative comparison of DIS5K with 11 representative methods.
     </em>
 </p>
 
 <p align="center">
-    <img src="imgs/5.jpg"/> <br />
+    <img src="assets/5.jpg"/> <br />
     <em> 
     Fig. 5: Qualitative comparison of our model with four leading models. Local masks are evaluated with MAE score for clarity.
     </em>
@@ -168,9 +168,9 @@ Due to its capability of achieving high-precision segmentation of foreground obj
 <div align="center">
   <table>
     <tr>
-      <td><img src="imgs/1.gif" height="200px"/></td>
-      <td><img src="imgs/2.gif" height="200px"/></td>
-      <td><img src="imgs/3.gif" height="200px"/></td>
+      <td><img src="assets/1.gif" height="200px"/></td>
+      <td><img src="assets/2.gif" height="200px"/></td>
+      <td><img src="assets/3.gif" height="200px"/></td>
     </tr>
   </table>
   <em>
@@ -179,21 +179,21 @@ Due to its capability of achieving high-precision segmentation of foreground obj
 </div>
 
 <p align="center">
-    <img src="imgs/app1-3D.gif" width="450px"/> <br />
+    <img src="assets/app1-3D.gif" width="450px"/> <br />
     <em> 
     Fig. 7: Application cases of 3D modeling.
     </em>
 </p>
 
 <p align="center">
-    <img src="imgs/app2-AR.gif" width="450px"/> <br />
+    <img src="assets/app2-AR.gif" width="450px"/> <br />
     <em> 
     Fig. 8: Application cases of AR.
     </em>
 </p>
 
 <p align="center">
-    <img src="imgs/app3-Still-Image-Animation.gif" width="450px"/> <br />
+    <img src="assets/app3-Still-Image-Animation.gif" width="450px"/> <br />
     <em> 
     Fig. 9: Application cases of still image animation.
     </em>
