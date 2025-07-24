@@ -75,7 +75,7 @@ pip install -r requirements.txt
 This project uses a custom VAE class `AutoencoderKlLawDIS` that needs to be manually added into the `diffusers` library.
 
 ```bash
-bash /install_lawdis_diffusers.sh
+bash install_lawdis_diffusers.sh
 ```
 
 ### 4.3. Dataset Preparation
