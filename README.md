@@ -1,4 +1,4 @@
-# <p align=center>`LawDIS: Language-Window-based Controllable Dichotomous Image Segmentation (ICCV 2025)`</p>
+# LawDIS: Language-Window-based Controllable Dichotomous Image Segmentation (ICCV 2025)
 
 This repo contains the source code and prediction results of our paper [_LawDIS: Language-Window-based Controllable Dichotomous Image Segmentation_](https://arxiv.org/pdf/) accepted by ICCV 2025. In this paper, we present LawDIS, a language-window-based controllable dichotomous image segmentation (DIS) framework that produces high-quality object masks. 
 
@@ -80,8 +80,7 @@ bash install_lawdis_diffusers.sh
 
 ### 4.3. Dataset Preparation
 
-Download the **DIS5K dataset** from this [Google Drive link](https://drive.google.com/file/d/1O1eIuXX1hlGsV7qx4eSkjH231q7G1by1/view?usp=sharing) or [Baidu Pan link](https://pan.baidu.com/s/1y6CQJYledfYyEO0C_Gejpw?pwd=rtgw) with the fetch code: `rtgw`.
-Unzip the dataset and place the unzipped dataset folder (e.g., `DIS5K`) inside the root of the `LawDIS` repository.
+Download the **DIS5K dataset** from this [Google Drive link](https://drive.google.com/file/d/1O1eIuXX1hlGsV7qx4eSkjH231q7G1by1/view?usp=sharing) or [Baidu Pan link](https://pan.baidu.com/s/1y6CQJYledfYyEO0C_Gejpw?pwd=rtgw) with the fetch code: `rtgw`. Unzip the dataset and move the DIS5K folder into the LawDIS/data directory.
 
 ### 4.4. Inference
 #### ✅ Step 1. Download the Checkpoints
@@ -103,18 +102,27 @@ We provide scripts for:
 
 **Batch Testing**
 
-Update the `--checkpoint`, `--input_rgb_dir`, `--subset_name`, and `--output_dir` in `run_infer_macro.sh`. Then run:
-
 ```bash
-bash run_infer_macro.sh
+python script/infer_macro.py \
+    --checkpoint "stable-diffusion-2" \
+    --input_rgb_dir "data/DIS5K" \
+    --subset_name "DIS-TE4" \
+    --prompt_dir 'data/json' \
+    --output_dir "output/output-macro" \
+    --denoise_steps 1 \
+    --processing_res 1024 
 ```
 
 **Single Image with Prompts**
 
-Update the `--checkpoint`, `--input_img_path`, `--prompts`, and `--output_dir` in `run_infer_macro_single.sh`. Then run:
-
 ```bash
-bash run_infer_macro_single.sh
+python script/infer_macro_single.py \
+    --checkpoint "stable-diffusion-2" \
+    --input_img_path "data/imgs/2#Aircraft#7#UAV#16522310810_468dfa447a_o.jpg" \
+    --prompts "Black professional camera drone with a high-definition camera mounted on a gimbal." "Three men beside a UAV."] \
+    --output_dir 'output/output-macro-single' \
+    --denoise_steps 1 \
+    --processing_res 1024 
 ```
 
 ---
@@ -132,18 +140,29 @@ You can choose how to generate the refinement windows using `--window_mode`:
 
 **Batch Testing**
 
-Update the `--checkpoint`, `--input_rgb_dir`, `--subset_name`, `--init_seg_dir`, `--output_dir`, and `--window_mode` in `run_infer_micro.sh`. Then run:
-
 ```bash
-bash run_infer_micro.sh
+python script/infer_micro.py \
+    --checkpoint "stable-diffusion-2" \
+    --input_rgb_dir "data/DIS5K" \
+    --subset_name "DIS-TE4" \
+    --init_seg_dir 'output/output-macro/' \
+    --output_dir "output/output-micro/" \
+    --window_mode "semi-auto" \
+    --denoise_steps 1 \
+    --processing_res 1024 
 ```
 
 **Single Image Testing**
 
-Update the `--checkpoint`, `--input_img_path`, `--init_seg_dir`, `--output_dir`, and `--window_mode` in `run_infer_micro_single.sh`. Then run:
-
 ```bash
-bash run_infer_micro_single.sh
+python script/infer_micro_single.py \
+    --checkpoint "stable-diffusion-2" \
+    --input_img_path "data/imgs/2#Aircraft#7#UAV#16522310810_468dfa447a_o.jpg" \
+    --init_seg_dir 'output/output-macro-single/2#Aircraft#7#UAV#16522310810_468dfa447a_o_0.png' \
+    --output_dir "output/output-micro-single" \
+    --window_mode "auto" \
+    --denoise_steps 1 \
+    --processing_res 1024 
 ```
 ## 🏋️ 5. Results
 
