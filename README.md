@@ -202,21 +202,21 @@ Due to its capability of achieving high-precision segmentation of foreground obj
 </div>
 
 <p align="center">
-    <img src="assets/app1-3D.gif" /> <br />
+    <img src="assets/app1-3D.gif" width="850px" /> <br />
     <em> 
     Fig. 7: Application cases of 3D modeling.
     </em>
 </p>
 
 <p align="center">
-    <img src="assets/app2-AR.gif" /> <br />
+    <img src="assets/app2-AR.gif" width="850px"/> <br />
     <em> 
     Fig. 8: Application cases of AR.
     </em>
 </p>
 
 <p align="center">
-    <img src="assets/app3-Still-Image-Animation.gif" /> <br />
+    <img src="assets/app3-Still-Image-Animation.gif" width="850px"/> <br />
     <em> 
     Fig. 9: Application cases of still image animation.
     </em>
