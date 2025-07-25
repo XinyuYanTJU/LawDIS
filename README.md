@@ -14,6 +14,11 @@ This repo contains the source code and prediction results of our paper [_LawDIS:
 > [Salman Khan](https://salman-h-khan.github.io/),
 > [Deng-Ping Fan](https://dengpingfan.github.io/).
 
+The following is a quick video to introduce our work:
+
+https://github.com/user-attachments/assets/a3eaf703-d3db-4ba3-87a5-9c6fed09b569
+
+
 
 ## 🚀 1. Features
 
