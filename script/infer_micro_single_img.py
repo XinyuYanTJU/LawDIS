@@ -135,7 +135,6 @@ if "__main__" == __name__:
     help=(
         "Window selection mode."
         "'auto': Automatically select windows based on object edges in the initial segmentation map."
-        "'semi-auto': Simulate user-guided window selection using object edges from the ground-truth (GT) segmentation."
         "'manual': User manually specifies window regions (e.g., via UI or coordinate input)."
     )
 )
