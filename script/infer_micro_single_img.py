@@ -294,7 +294,7 @@ if "__main__" == __name__:
                     plt.close()
             fig.canvas.mpl_connect('key_press_event', on_key)
             plt.show()
-            # 对手动选择的窗口进行过滤，去除全白或全黑的无效区域
+            
             filtered_rectangles = []
             for (xy, wh) in rectangles:
                 (x, y), (w, h) = xy, wh
