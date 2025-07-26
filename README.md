@@ -27,7 +27,7 @@
     <img src="assets/show.gif" /> <br />
 </p>
 
-This repo contains the source code and prediction results of our paper [_LawDIS: Language-Window-based Controllable Dichotomous Image Segmentation_](https://arxiv.org/pdf/) accepted by ICCV 2025. In this paper, we present LawDIS, a language-window-based controllable dichotomous image segmentation (DIS) framework that produces high-quality object masks. 
+In this paper, we present LawDIS, a language-window-based controllable dichotomous image segmentation (DIS) framework. It supports two forms of user control: generating an initial mask based on user-provided language prompts, and enabling flexible refinement of user-defined regions (i.e., size-adjustable windows) within any initial mask. 
 
 
 The following is a quick video to introduce our work:
