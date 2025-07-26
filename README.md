@@ -190,7 +190,11 @@ python script/infer_micro_single_img.py \
 ```
 ## 🏋️ 4. SOTA Results
 
-The predicted segmentation maps of both **Macro (Ours-S)** and **Micro (Ours-R)** modes can be downloaded from this [Google Drive link](https://drive.google.com/drive/folders/16WlZEq4NQso3gP3AdYcbdNf9Q0_KjZHN?usp=sharing) or [Baidu Pan link](https://pan.baidu.com/s/1em-6dEh2Qr2si17zi-CCxg) with the fetch code: `lawd`.
+The predicted segmentation maps can be downloaded from this [Google Drive link](https://drive.google.com/drive/folders/16WlZEq4NQso3gP3AdYcbdNf9Q0_KjZHN?usp=sharing) or [Baidu Pan link](https://pan.baidu.com/s/1em-6dEh2Qr2si17zi-CCxg) with the fetch code: `lawd`. 
+
+`LawDIS-S` refers to the initial segmentation results obtained under the macro mode with language prompt control. `LawDIS-R` refers to the refined results obtained under the micro mode, where window-based refinement are applied to LawDIS-S. 
+
+Notably, the initial results (LawDIS-S) already achieve SOTA performance, and LawDIS-R further improves the metrics.
 
 <p align="center">
     <img src="assets/4.png"/> <br />
