@@ -114,7 +114,7 @@ We provide scripts for:
 **Batch Testing**
 
 ```bash
-python script/infer_macro.py \
+python script/infer_macro_batch_imgs.py \
     --checkpoint "stable-diffusion-2" \
     --input_rgb_dir "data/DIS5K" \
     --subset_name "DIS-TE4" \
@@ -127,7 +127,7 @@ python script/infer_macro.py \
 **Single Image with Prompts**
 
 ```bash
-python script/infer_macro_single.py \
+python script/infer_macro_single_img.py \
     --checkpoint "stable-diffusion-2" \
     --input_img_path "data/imgs/2#Aircraft#7#UAV#16522310810_468dfa447a_o.jpg" \
     --prompts "Black professional camera drone with a high-definition camera mounted on a gimbal." "Three men beside a UAV." \
@@ -152,7 +152,7 @@ You can choose how to generate the refinement windows using `--window_mode`:
 **Batch Testing**
 
 ```bash
-python script/infer_micro.py \
+python script/infer_micro_batch_imgs.py \
     --checkpoint "stable-diffusion-2" \
     --input_rgb_dir "data/DIS5K" \
     --subset_name "DIS-TE4" \
@@ -166,7 +166,7 @@ python script/infer_micro.py \
 **Single Image Testing**
 
 ```bash
-python script/infer_micro_single.py \
+python script/infer_micro_single_img.py \
     --checkpoint "stable-diffusion-2" \
     --input_img_path "data/imgs/2#Aircraft#7#UAV#16522310810_468dfa447a_o.jpg" \
     --init_seg_dir 'output/output-macro-single/2#Aircraft#7#UAV#16522310810_468dfa447a_o_0.png' \
