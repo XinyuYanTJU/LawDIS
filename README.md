@@ -7,12 +7,12 @@
 This repo contains the source code and prediction results of our paper [_LawDIS: Language-Window-based Controllable Dichotomous Image Segmentation_](https://arxiv.org/pdf/) accepted by ICCV 2025. In this paper, we present LawDIS, a language-window-based controllable dichotomous image segmentation (DIS) framework that produces high-quality object masks. 
 
 > **Authors:**
-> [Xinyu Yan](https://github.com/XinyuYanTJU),
+> [Xinyu Yan](https://scholar.google.com/citations?user=bYLzUgYAAAAJ&hl),
 > [Meijun Sun](https://sunmeijun.github.io/),
-> [Ge-Peng Ji](https://github.com/GewelsJI),
-> [Fahad Shahbaz Khan](https://sites.google.com/view/fahadkhans/home),
-> [Salman Khan](https://salman-h-khan.github.io/),
-> [Deng-Ping Fan](https://dengpingfan.github.io/).
+> [Ge-Peng Ji](https://scholar.google.com/citations?hl=zh-CN&user=oaxKYKUAAAAJ),
+> [Fahad Shahbaz Khan](https://scholar.google.com/citations?user=zvaeYnUAAAAJ&hl=zh-CN&oi=ao),
+> [Salman Khan](https://scholar.google.com/citations?user=M59O9lkAAAAJ&hl=zh-CN&oi=ao),
+> [Deng-Ping Fan](https://scholar.google.com/citations?user=kakwJ5QAAAAJ&hl=zh-CN&oi=ao).
 
 The following is a quick video to introduce our work:
 
@@ -39,9 +39,9 @@ https://github.com/user-attachments/assets/a3eaf703-d3db-4ba3-87a5-9c6fed09b569
 
 ## 📢 2. News
 - **2025.07** 💻 We have open-sourced the **core code** of LawDIS!
-- **2025.06** 🎉 Our paper has been accepted by **ICCV 2025**!  
+- **2025.06** 🎉 Our paper has been accepted by **[ICCV 2025, Honolulu, Hawai'i](https://iccv.thecvf.com/)**!  
 
-> This project is still a work in progress, and we invite all to contribute to making it more accessible and useful. If you have any questions about our paper, feel free to contact me via e-mail (xinyuyan@tju.edu.cn). If you are using our code for your research, please cite this paper ([BibTeX](#4-citation)).
+> This project is still a work in progress, and we invite all to contribute to making it more accessible and useful. If you have any questions about our paper, feel free to contact me via e-mail (xinyuyan@tju.edu.cn). If you are using our code for your research, please cite this paper ([BibTeX](#-9-citations)).
 
 ## ♟️3. Proposed Framework
 <table align="center">
