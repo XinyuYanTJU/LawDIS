@@ -181,14 +181,14 @@ The predicted segmentation maps of both **Macro (Ours-S)** and **Micro (Ours-R)*
 <p align="center">
     <img src="assets/4.png"/> <br />
     <em> 
-    Fig. 4: Quantitative comparison of DIS5K with 11 representative methods.
+    Fig. 2: Quantitative comparison of DIS5K with 11 representative methods.
     </em>
 </p>
 
 <p align="center">
     <img src="assets/5.jpg"/> <br />
     <em> 
-    Fig. 5: Qualitative comparison of our model with four leading models. Local masks are evaluated with MAE score for clarity.
+    Fig. 3: Qualitative comparison of our model with four leading models. Local masks are evaluated with MAE score for clarity.
     </em>
 </p>
 
@@ -203,28 +203,28 @@ Due to its capability of achieving high-precision segmentation of foreground obj
     </tr>
   </table>
   <em>
-    Fig. 6: Application cases of background-removed results in various scenarios.
+    Fig. 4: Application cases of background-removed results in various scenarios.
   </em>
 </div>
 
 <p align="center">
     <img src="assets/app1-3D.gif" width="850px" /> <br />
     <em> 
-    Fig. 7: Application cases of 3D modeling.
+    Fig. 5: Application cases of 3D modeling.
     </em>
 </p>
 
 <p align="center">
     <img src="assets/app2-AR.gif" width="850px"/> <br />
     <em> 
-    Fig. 8: Application cases of AR.
+    Fig. 6: Application cases of AR.
     </em>
 </p>
 
 <p align="center">
     <img src="assets/app3-Still-Image-Animation.gif" width="850px"/> <br />
     <em> 
-    Fig. 9: Application cases of still image animation.
+    Fig. 7: Application cases of still image animation.
     </em>
 </p>
 
