@@ -59,38 +59,18 @@ https://github.com/user-attachments/assets/a3eaf703-d3db-4ba3-87a5-9c6fed09b569
 
 > This project is still a work in progress, and we invite all to contribute to making it more accessible and useful. If you have any questions about our paper, feel free to contact me via e-mail (xinyuyan@tju.edu.cn). If you are using our code for your research, please cite this paper ([BibTeX](#-9-citations)).
 
-## ♟️3. Proposed Framework
-
-Our framework recasts DIS as an image-conditioned mask generation task within a latent diffusion model, enabling seamless integration of user controls. LawDIS is enhanced with macro-to-micro control modes. Specifically, in macro mode, we introduce a language-controlled segmentation strategy (LS) to generate an initial mask based on user-provided language prompts. In micro mode, a window-controlled refinement strategy (WR) allows flexible refinement of user-defined regions (i.e., size-adjustable windows) within the initial mask. Coordinated by a mode switcher, these modes can operate independently or jointly, making the framework well-suited for high-accuracy, personalised applications.
-
-<table align="center">
-  <tr>
-    <td align="center" valign="top" >
-      <img src="assets/2.jpg" height="450px"/><br/>
-      <div style="height: 50px;">
-        <sub><em>Fig. 2: An overview of the U-Net training protocol in LawDIS.</em></sub>
-      </div>
-    </td>
-    <td align="center" valign="top" >
-      <img src="assets/3.png" height="450px"/><br/>
-      <div style="height: 50px;">
-        <sub><em>Fig. 3: Overview of the inference protocol, which consists of two steps.</em></sub>
-      </div>
-    </td>
-  </tr>
-</table>
 
 
-## 🛠️ 4. Setup
+## 🛠️ 3. Setup
 
-### 4.1. Repository
+### 3.1. Repository
 Clone the repository (requires git):
 ```bash
 git clone https://github.com/XinyuYanTJU/LawDIS.git
 cd LawDIS
 ```
 
-### 4.2. Dependencies
+### 3.2. Dependencies
 #### ✅ Step 1. Install the dependencies:
 ```bash
 conda create -n lawdis python=3.8
@@ -106,13 +86,13 @@ This project uses a custom VAE class `AutoencoderKlLawDIS` that needs to be manu
 bash install_lawdis_diffusers.sh
 ```
 
-### 4.3. Dataset Preparation
+### 3.3. Dataset Preparation
 
 Download the **DIS5K dataset** from this [Google Drive link](https://drive.google.com/file/d/1O1eIuXX1hlGsV7qx4eSkjH231q7G1by1/view?usp=sharing) or [Baidu Pan link](https://pan.baidu.com/s/1y6CQJYledfYyEO0C_Gejpw?pwd=rtgw) with the fetch code: `rtgw`. Unzip the dataset and move the DIS5K folder into the LawDIS/data directory.
 
 The language prompts we annotated for DIS5K can be found in `LawDIS/data/json/`.
 
-### 4.4. Inference
+### 3.4. Inference
 #### ✅ Step 1. Download the Checkpoints
 
 Download the pre-trained checkpoints from this [Google Drive link](https://drive.google.com/drive/folders/1RDBTj5-Z9Ek9wqnYoQHkFz4_zCFwiKK_?usp=drive_link) or [Baidu Pan link](https://pan.baidu.com/s/1DGqK_Nl3ccv_pi4mIOMndw) with the fetch code: `2025`.
@@ -194,7 +174,7 @@ python script/infer_micro_single.py \
     --denoise_steps 1 \
     --processing_res 1024 
 ```
-## 🏋️ 5. Results
+## 🏋️ 4. Results
 
 The predicted segmentation maps of both **Macro (Ours-S)** and **Micro (Ours-R)** modes can be downloaded from this [Google Drive link](https://drive.google.com/drive/folders/16WlZEq4NQso3gP3AdYcbdNf9Q0_KjZHN?usp=sharing) or [Baidu Pan link](https://pan.baidu.com/s/1em-6dEh2Qr2si17zi-CCxg) with the fetch code: `lawd`.
 
@@ -212,7 +192,7 @@ The predicted segmentation maps of both **Macro (Ours-S)** and **Micro (Ours-R)*
     </em>
 </p>
 
-## 🎮 6. Applications
+## 🎮 5. Applications
 Due to its capability of achieving high-precision segmentation of foreground objects at high resolutions, our LawDIS enables extensive application across a variety of scenarios. Fig. 6 shows application cases of background removal. As can be seen, compared with the original image, the background-removed image shows higher aesthetic values and good usability, which can even be directly used as: 3D modeling, augmented reality (AR), and still image animation.
 <div align="center">
   <table>
@@ -248,20 +228,11 @@ Due to its capability of achieving high-precision segmentation of foreground obj
     </em>
 </p>
 
-## 📦 7. Related work
-Our code is based on 
+## 📦 6. Related work
+Our code is based on [Marigold](https://github.com/prs-eth/marigold) and [Diffusers](https://github.com/huggingface/diffusers). We are grateful to the authors of these projects for their pioneering work and contributions!
 
-- Marigold: Repurposing Diffusion-Based Image Generators for Monocular Depth Estimation, [Github](https://github.com/prs-eth/marigold)
 
-- Diffusers, [Github](https://github.com/huggingface/diffusers) .
-
-We are grateful to the authors of these projects for their pioneering work and contributions!
-
-## ✏️ 8. To do
-- [ ] Training code; 
-- [ ] Huggingface app demo.
-
-## 🎓 9. Citations
+## 🎓 7. Citations
 If you find this code useful, we kindly ask you to cite our paper in your work.
 ```
 @article{LawDIS,
