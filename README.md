@@ -149,7 +149,7 @@ python script/infer_macro.py \
 python script/infer_macro_single.py \
     --checkpoint "stable-diffusion-2" \
     --input_img_path "data/imgs/2#Aircraft#7#UAV#16522310810_468dfa447a_o.jpg" \
-    --prompts "Black professional camera drone with a high-definition camera mounted on a gimbal." "Three men beside a UAV."] \
+    --prompts "Black professional camera drone with a high-definition camera mounted on a gimbal." "Three men beside a UAV." \
     --output_dir 'output/output-macro-single' \
     --denoise_steps 1 \
     --processing_res 1024 
