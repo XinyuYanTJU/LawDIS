@@ -1,18 +1,34 @@
 # LawDIS: Language-Window-based Controllable Dichotomous Image Segmentation (ICCV 2025)
 
+<div align='center'>
+    <a href='https://scholar.google.com/citations?user=bYLzUgYAAAAJ&hl' target='_blank'><strong>Xinyu Yan</strong></a><sup> 1,2,6</sup>,&thinsp;
+    <a href='https://sunmeijun.github.io/' target='_blank'><strong>Meijun Sun</strong></a><sup> 1,2</sup>,&thinsp;
+    <a href='https://scholar.google.com/citations?hl=zh-CN&user=oaxKYKUAAAAJ' target='_blank'><strong>Ge-Peng Ji</strong></a><sup> 3</sup>,&thinsp;
+    <a href='https://scholar.google.com/citations?user=zvaeYnUAAAAJ&hl=zh-CN&oi=ao' target='_blank'><strong>Fahad Shahbaz Khan</strong></a><sup> 6</sup>,&thinsp;
+    <a href='https://scholar.google.com/citations?user=M59O9lkAAAAJ&hl=zh-CN&oi=ao' target='_blank'><strong>Salman Khan</strong></a><sup> 6</sup>,&thinsp;
+    <a href='https://scholar.google.com/citations?user=kakwJ5QAAAAJ&hl=zh-CN&oi=ao' target='_blank'><strong>Deng-Ping Fan</strong></a><sup> 4,5*</sup>
+</div>
+
+<div align='center'>
+    <sup>1 </sup>Tianjin University&ensp;  <sup>2 </sup>Tianjin Key Laboratory of Machine Learning&ensp;  <sup>3 </sup>Australian National University&ensp; 
+    <br />
+    <sup>4 </sup>Nankai Institute of Advanced Research (SHENZHEN FUTIAN)&ensp;  <sup>5 </sup>Nankai University&ensp;  <sup>6 </sup>MBZUAI&ensp; 
+</div>
+
+<div align="center" style="display: flex; justify-content: center; flex-wrap: wrap;">
+  <a href='https://arxiv.org'><img src='https://img.shields.io/badge/arXiv-Paper-red'></a>&ensp; 
+  <a href='https://github.com/XinyuYanTJU/LawDIS'><img src='https://img.shields.io/badge/Page-Project-red'></a>&ensp; 
+  <a href='https://drive.google.com/drive/folders/1cLmMm2PIrZ00lWuz2EvudNH-7zg6Cn9w?usp=sharing'><img src='https://img.shields.io/badge/GDrive-Stuff-green'></a>&ensp; 
+  <a href='LICENSE'><img src='https://img.shields.io/badge/License-MIT-yellow'></a>&ensp; 
+</div>
+
+<br>
 <p align="center">
     <img src="assets/show.gif" /> <br />
 </p>
 
 This repo contains the source code and prediction results of our paper [_LawDIS: Language-Window-based Controllable Dichotomous Image Segmentation_](https://arxiv.org/pdf/) accepted by ICCV 2025. In this paper, we present LawDIS, a language-window-based controllable dichotomous image segmentation (DIS) framework that produces high-quality object masks. 
 
-> **Authors:**
-> [Xinyu Yan](https://scholar.google.com/citations?user=bYLzUgYAAAAJ&hl),
-> [Meijun Sun](https://sunmeijun.github.io/),
-> [Ge-Peng Ji](https://scholar.google.com/citations?hl=zh-CN&user=oaxKYKUAAAAJ),
-> [Fahad Shahbaz Khan](https://scholar.google.com/citations?user=zvaeYnUAAAAJ&hl=zh-CN&oi=ao),
-> [Salman Khan](https://scholar.google.com/citations?user=M59O9lkAAAAJ&hl=zh-CN&oi=ao),
-> [Deng-Ping Fan](https://scholar.google.com/citations?user=kakwJ5QAAAAJ&hl=zh-CN&oi=ao).
 
 The following is a quick video to introduce our work:
 
@@ -44,6 +60,9 @@ https://github.com/user-attachments/assets/a3eaf703-d3db-4ba3-87a5-9c6fed09b569
 > This project is still a work in progress, and we invite all to contribute to making it more accessible and useful. If you have any questions about our paper, feel free to contact me via e-mail (xinyuyan@tju.edu.cn). If you are using our code for your research, please cite this paper ([BibTeX](#-9-citations)).
 
 ## ♟️3. Proposed Framework
+
+Our framework recasts DIS as an image-conditioned mask generation task within a latent diffusion model, enabling seamless integration of user controls. LawDIS is enhanced with macro-to-micro control modes. Specifically, in macro mode, we introduce a language-controlled segmentation strategy (LS) to generate an initial mask based on user-provided language prompts. In micro mode, a window-controlled refinement strategy (WR) allows flexible refinement of user-defined regions (i.e., size-adjustable windows) within the initial mask. Coordinated by a mode switcher, these modes can operate independently or jointly, making the framework well-suited for high-accuracy, personalised applications.
+
 <table align="center">
   <tr>
     <td align="center" valign="top" >
@@ -90,6 +109,8 @@ bash install_lawdis_diffusers.sh
 ### 4.3. Dataset Preparation
 
 Download the **DIS5K dataset** from this [Google Drive link](https://drive.google.com/file/d/1O1eIuXX1hlGsV7qx4eSkjH231q7G1by1/view?usp=sharing) or [Baidu Pan link](https://pan.baidu.com/s/1y6CQJYledfYyEO0C_Gejpw?pwd=rtgw) with the fetch code: `rtgw`. Unzip the dataset and move the DIS5K folder into the LawDIS/data directory.
+
+The language prompts we annotated for DIS5K can be found in `LawDIS/data/json/`.
 
 ### 4.4. Inference
 #### ✅ Step 1. Download the Checkpoints
@@ -175,7 +196,7 @@ python script/infer_micro_single.py \
 ```
 ## 🏋️ 5. Results
 
-The predicted segmentation maps of both **Macro** and **Micro** modes can be downloaded from this [Google Drive link](https://drive.google.com/drive/folders/16WlZEq4NQso3gP3AdYcbdNf9Q0_KjZHN?usp=sharing) or [Baidu Pan link](https://pan.baidu.com/s/1em-6dEh2Qr2si17zi-CCxg) with the fetch code: `lawd`.
+The predicted segmentation maps of both **Macro (Ours-S)** and **Micro (Ours-R)** modes can be downloaded from this [Google Drive link](https://drive.google.com/drive/folders/16WlZEq4NQso3gP3AdYcbdNf9Q0_KjZHN?usp=sharing) or [Baidu Pan link](https://pan.baidu.com/s/1em-6dEh2Qr2si17zi-CCxg) with the fetch code: `lawd`.
 
 <p align="center">
     <img src="assets/4.png"/> <br />
