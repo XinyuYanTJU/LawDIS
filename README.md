@@ -188,7 +188,7 @@ python script/infer_micro_single_img.py \
     --denoise_steps 1 \
     --processing_res 1024 
 ```
-## 🏋️ 4. Results
+## 🏋️ 4. SOTA Results
 
 The predicted segmentation maps of both **Macro (Ours-S)** and **Micro (Ours-R)** modes can be downloaded from this [Google Drive link](https://drive.google.com/drive/folders/16WlZEq4NQso3gP3AdYcbdNf9Q0_KjZHN?usp=sharing) or [Baidu Pan link](https://pan.baidu.com/s/1em-6dEh2Qr2si17zi-CCxg) with the fetch code: `lawd`.
 
