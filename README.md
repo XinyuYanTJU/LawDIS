@@ -54,11 +54,12 @@ https://github.com/user-attachments/assets/a3eaf703-d3db-4ba3-87a5-9c6fed09b569
 - **Superior performance.** Extensive evaluations on the DIS5K benchmark demonstrate that LawDIS consistently outperforms 11 state-of-the-art methods. Compared to the second-best model MVANet, LawDIS achieves a 3.6% $F_\beta^\omega$ improvement using LS alone, and a 4.6% gain when combining both LS and WR on DIS-TE.
 
 ## 📢 2. News
+
+> [!note]
+> The future directions of this project include more precise prompt control and improved efficiency. We warmly invite all potential collaborators to contribute to making LawDIS more accessible and practical. If you are interested in collaboration or have any questions about our paper, feel free to contact us via email (xinyuyan@tju.edu.cn & gepengai.ji@gmail.com). If you are using our code for your research, please cite this paper ([BibTeX](#-7-citations)).
+
 - **2025.07** 💻 We have open-sourced the **core code** of LawDIS!
 - **2025.06** 🎉 Our paper has been accepted by **[ICCV 2025, Honolulu, Hawai'i](https://iccv.thecvf.com/)**!  
-
-> This project is still a work in progress, and we invite all to contribute to making it more accessible and useful. If you have any questions about our paper, feel free to contact me via e-mail (xinyuyan@tju.edu.cn). If you are using our code for your research, please cite this paper ([BibTeX](#-9-citations)).
-
 
 
 ## 🛠️ 3. Setup
