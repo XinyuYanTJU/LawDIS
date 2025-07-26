@@ -109,9 +109,10 @@ Place the checkpoint files under:
 
 We provide scripts for:
 - **Batch testing** a dataset
-- Testing **a single image** with multiple language prompts
+- Testing **a single image** with multiple language **prompts**
+- **Fully automatic** testing of **a single image** without requiring prompt input
 
-**Batch Testing**
+**Batch testing**
 
 ```bash
 python script/infer_macro_batch_imgs.py \
@@ -124,13 +125,25 @@ python script/infer_macro_batch_imgs.py \
     --processing_res 1024 
 ```
 
-**Single Image with Prompts**
+**Testing a single image with prompts**
 
 ```bash
 python script/infer_macro_single_img.py \
     --checkpoint "stable-diffusion-2" \
     --input_img_path "data/imgs/2#Aircraft#7#UAV#16522310810_468dfa447a_o.jpg" \
     --prompts "Black professional camera drone with a high-definition camera mounted on a gimbal." "Three men beside a UAV." \
+    --output_dir 'output/output-macro-single' \
+    --denoise_steps 1 \
+    --processing_res 1024 
+```
+
+**Fully automatic testing of a single image without a prompt**
+
+```bash
+python script/infer_macro_single_img.py \
+    --checkpoint "stable-diffusion-2" \
+    --input_img_path "data/imgs/2#Aircraft#7#UAV#16522310810_468dfa447a_o.jpg" \
+    --prompts "" \
     --output_dir 'output/output-macro-single' \
     --denoise_steps 1 \
     --processing_res 1024 
@@ -149,7 +162,7 @@ You can choose how to generate the refinement windows using `--window_mode`:
 - `"semi-auto"`: Simulate user-guided selection using GT segmentation.
 - `"manual"`: User manually selects windows (⚠️ Only works on **local servers**).
 
-**Batch Testing**
+**Batch testing**
 
 ```bash
 python script/infer_micro_batch_imgs.py \
@@ -163,7 +176,7 @@ python script/infer_micro_batch_imgs.py \
     --processing_res 1024 
 ```
 
-**Single Image Testing**
+**Single image testing**
 
 ```bash
 python script/infer_micro_single_img.py \
