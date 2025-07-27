@@ -26,27 +26,24 @@
 
 The following is a quick video to show the performance:
 
-https://github.com/user-attachments/assets/a1ee15a7-fda0-4afe-9495-d3ab4004e356
+https://github.com/user-attachments/assets/3d34922f-16be-4268-a600-9b12035222a7
+
+
 
 
 
 We present LawDIS, a language-window-based controllable dichotomous image segmentation (DIS) framework. It supports two forms of user control: generating an initial mask based on user-provided language prompts, and enabling flexible refinement of user-defined regions (i.e., size-adjustable windows) within initial masks. 
 
 
-The following is a quick video to introduce our work:
 
-https://github.com/user-attachments/assets/a3eaf703-d3db-4ba3-87a5-9c6fed09b569
 
 
 
 ## 🚀 1. Features
 
-<p align="center">
-    <img src="assets/1.png" width="450"/> <br />
-    <em> 
-    Fig. 1: Illustration of the proposed macro and micro controls for DIS. The macro mode enables users to segment objects with customised language prompts, while micro mode supports post-refinement on user-defined windows at any scale. After refinement, our results become more precise, whereas the runner-up model, MVANet, lacks adaptability to the cropped local patches, resulting to inferior predictions.
-    </em>
-</p>
+The following is a quick video to introduce our work:
+
+https://github.com/user-attachments/assets/a3eaf703-d3db-4ba3-87a5-9c6fed09b569
 
 - **Framework innovation.** We recast the DIS task as an image-conditioned mask generation problem within a latent diffusion model. This enables LawDIS to seamlessly integrate both macro and micro user controls under a unified model and a shared set of parameters.
 
