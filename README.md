@@ -24,7 +24,7 @@
 
 <br>
 
-The following is a quick video to show the performance:
+The following is a quick video to show the performance. Full-screen viewing is recommended.
 
 https://github.com/user-attachments/assets/3d34922f-16be-4268-a600-9b12035222a7
 
