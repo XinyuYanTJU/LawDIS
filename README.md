@@ -40,7 +40,10 @@ We present LawDIS, a language-window-based controllable dichotomous image segmen
 
 The following is a quick video to introduce our work:
 
-https://github.com/user-attachments/assets/a3eaf703-d3db-4ba3-87a5-9c6fed09b569
+
+https://github.com/user-attachments/assets/b2327310-0259-4b7a-95dd-fd4e881900fb
+
+
 
 - **Framework innovation.** We recast the DIS task as an image-conditioned mask generation problem within a latent diffusion model. This enables LawDIS to seamlessly integrate both macro and micro user controls under a unified model and a shared set of parameters.
 
