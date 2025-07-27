@@ -24,12 +24,9 @@
 
 <br>
 
-The following is a quick video to show the performance. Full-screen viewing is recommended.
+⭐ Let's have a quick recap of our main idea. **Full-screen viewing is recommended for better visual details.**
 
 https://github.com/user-attachments/assets/d9885514-1d79-42b4-8d5b-e1b3dc79d3c1
-
-
-
 
 
 We present LawDIS, a language-window-based controllable dichotomous image segmentation (DIS) framework. It supports two forms of user control: generating an initial mask based on user-provided language prompts, and enabling flexible refinement of user-defined regions (i.e., size-adjustable windows) within initial masks. 
@@ -250,7 +247,8 @@ Due to its capability of achieving high-precision segmentation of foreground obj
 Our code is based on [Marigold](https://github.com/prs-eth/marigold) and [Diffusers](https://github.com/huggingface/diffusers). We are grateful to the authors of these projects for their pioneering work and contributions!
 
 
-## 🎓 7. Citations
+## 🎓 7. Citations (Coming soon ...)
+
 If you find this code useful, we kindly ask you to cite our paper in your work.
 ```
 @article{LawDIS,
