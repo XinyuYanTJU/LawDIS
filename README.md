@@ -26,10 +26,7 @@
 
 ⭐ Let's have a quick recap of our main idea. **Full-screen viewing is recommended for better visual details.**
 
-
-
 https://github.com/user-attachments/assets/4aef257d-6a72-4f91-853b-ed2792092358
-
 
 We present LawDIS, a language-window-based controllable dichotomous image segmentation (DIS) framework. It supports two forms of user control: generating an initial mask based on user-provided language prompts, and enabling flexible refinement of user-defined regions (i.e., size-adjustable windows) within initial masks. 
 
@@ -37,8 +34,7 @@ We present LawDIS, a language-window-based controllable dichotomous image segmen
 
 ## 🚀 1. Features
 
-The following is a quick video to introduce our work:
-
+The following is an introductory video of our work:
 
 https://github.com/user-attachments/assets/b2327310-0259-4b7a-95dd-fd4e881900fb
 
@@ -57,7 +53,7 @@ https://github.com/user-attachments/assets/b2327310-0259-4b7a-95dd-fd4e881900fb
 > [!note]
 > The future directions of this project include more precise prompt control and improved efficiency. We warmly invite all potential collaborators to contribute to making LawDIS more accessible and practical. If you are interested in collaboration or have any questions about our paper, feel free to contact us via email (xinyuyan@tju.edu.cn & gepengai.ji@gmail.com). If you are using our code for your research, please cite this paper ([BibTeX](#-7-citations)).
 
-- **2025.07** 💻 We have open-sourced the **core code** of LawDIS!
+- **2025.07** We have open-sourced the **core code** of LawDIS!
 - **2025.06** 🎉 Our paper has been accepted by **[ICCV 2025, Honolulu, Hawai'i](https://iccv.thecvf.com/)**!  
 
 
@@ -249,9 +245,9 @@ Due to its capability of achieving high-precision segmentation of foreground obj
 Our code is based on [Marigold](https://github.com/prs-eth/marigold) and [Diffusers](https://github.com/huggingface/diffusers). We are grateful to the authors of these projects for their pioneering work and contributions!
 
 
-## 🎓 7. Citations (Coming soon ...)
+## 🎓 7. Citations
 
-If you find this code useful, we kindly ask you to cite our paper in your work.
+ (Coming soon ...) If you find this code useful, we kindly ask you to cite our paper in your work.
 ```
 @article{LawDIS,
   title={LawDIS: Language-Window-based Controllable Dichotomous Image Segmentation},
