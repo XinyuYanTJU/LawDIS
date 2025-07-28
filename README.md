@@ -26,7 +26,10 @@
 
 ⭐ Let's have a quick recap of our main idea. **Full-screen viewing is recommended for better visual details.**
 
-https://github.com/user-attachments/assets/4aef257d-6a72-4f91-853b-ed2792092358
+https://github.com/user-attachments/assets/7d4c33a5-eff9-4474-a454-bff2b6ec78fa
+
+
+
 
 We present LawDIS, a language-window-based controllable dichotomous image segmentation (DIS) framework. It supports two forms of user control: generating an initial mask based on user-provided language prompts, and enabling flexible refinement of user-defined regions (i.e., size-adjustable windows) within initial masks. 
 
