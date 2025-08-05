@@ -1,4 +1,4 @@
-<img width="432" height="14" alt="image" src="https://github.com/user-attachments/assets/ce0033a4-3f0a-4c0e-9327-032aff9827ac" /><img width="432" height="14" alt="image" src="https://github.com/user-attachments/assets/da7bf14a-a1c6-477b-abe7-c21b5ba4f789" /><img width="432" height="14" alt="image" src="https://github.com/user-attachments/assets/7d6f93c4-0a4c-4996-9b60-f01963d816cc" /># LawDIS: Language-Window-based Controllable Dichotomous Image Segmentation (ICCV 2025)
+# LawDIS: Language-Window-based Controllable Dichotomous Image Segmentation (ICCV 2025)
 
 <div align='center'>
     <a href='https://scholar.google.com/citations?user=bYLzUgYAAAAJ&hl' target='_blank'><strong>Xinyu Yan</strong></a><sup> 1,2,6</sup>,&thinsp;
