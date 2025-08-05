@@ -254,7 +254,7 @@ Our code is based on [Marigold](https://github.com/prs-eth/marigold) and [Diffus
 
  If you find this code useful, we kindly ask you to cite our paper in your work.
 ```
-@article{LawDIS,
+@article{yan2025lawdis,
   title={LawDIS: Language-Window-based Controllable Dichotomous Image Segmentation},
   author={Xinyu Yan and Meijun Sun and Ge-Peng Ji and Fahad Shahbaz Khan and Salman Khan and Deng-Ping Fan},
   journal={arXiv preprint arXiv:2508.01152},
