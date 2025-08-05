@@ -1,4 +1,4 @@
-# LawDIS: Language-Window-based Controllable Dichotomous Image Segmentation (ICCV 2025)
+<img width="432" height="14" alt="image" src="https://github.com/user-attachments/assets/ce0033a4-3f0a-4c0e-9327-032aff9827ac" /><img width="432" height="14" alt="image" src="https://github.com/user-attachments/assets/da7bf14a-a1c6-477b-abe7-c21b5ba4f789" /><img width="432" height="14" alt="image" src="https://github.com/user-attachments/assets/7d6f93c4-0a4c-4996-9b60-f01963d816cc" /># LawDIS: Language-Window-based Controllable Dichotomous Image Segmentation (ICCV 2025)
 
 <div align='center'>
     <a href='https://scholar.google.com/citations?user=bYLzUgYAAAAJ&hl' target='_blank'><strong>Xinyu Yan</strong></a><sup> 1,2,6</sup>,&thinsp;
@@ -16,7 +16,9 @@
 </div>
 
 <div align="center" style="display: flex; justify-content: center; flex-wrap: wrap;">
+  <a href='https://iccv.thecvf.com/virtual/2025/poster/2103'><img src='https://img.shields.io/badge/Conference-Paper-red'></a>&ensp; 
   <a href='https://arxiv.org/abs/2508.01152'><img src='https://img.shields.io/badge/arXiv-Paper-red'></a>&ensp; 
+  <a href='https://github.com/XinyuYanTJU/LawDIS/blob/main/LawDIS_Chinese_version.pdf'><img src='https://img.shields.io/badge/中文版-Paper-red'></a>&ensp; 
   <a href='https://github.com/XinyuYanTJU/LawDIS'><img src='https://img.shields.io/badge/Page-Project-red'></a>&ensp; 
   <a href='https://drive.google.com/drive/folders/1cLmMm2PIrZ00lWuz2EvudNH-7zg6Cn9w?usp=sharing'><img src='https://img.shields.io/badge/GDrive-Stuff-green'></a>&ensp; 
   <a href='LICENSE'><img src='https://img.shields.io/badge/License-MIT-yellow'></a>&ensp; 
