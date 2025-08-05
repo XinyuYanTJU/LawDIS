@@ -16,7 +16,7 @@
 </div>
 
 <div align="center" style="display: flex; justify-content: center; flex-wrap: wrap;">
-  <a href='https://arxiv.org'><img src='https://img.shields.io/badge/arXiv-Paper-red'></a>&ensp; 
+  <a href='https://arxiv.org/abs/2508.01152'><img src='https://img.shields.io/badge/arXiv-Paper-red'></a>&ensp; 
   <a href='https://github.com/XinyuYanTJU/LawDIS'><img src='https://img.shields.io/badge/Page-Project-red'></a>&ensp; 
   <a href='https://drive.google.com/drive/folders/1cLmMm2PIrZ00lWuz2EvudNH-7zg6Cn9w?usp=sharing'><img src='https://img.shields.io/badge/GDrive-Stuff-green'></a>&ensp; 
   <a href='LICENSE'><img src='https://img.shields.io/badge/License-MIT-yellow'></a>&ensp; 
